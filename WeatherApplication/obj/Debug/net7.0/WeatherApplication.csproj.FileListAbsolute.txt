@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\Weather\WeatherApplication\bin\Debug\net7.0\WeatherApplication.deps.json
+C:\Users\Admin\Desktop\Weather\WeatherApplication\bin\Debug\net7.0\WeatherApplication.dll
+C:\Users\Admin\Desktop\Weather\WeatherApplication\bin\Debug\net7.0\WeatherApplication.pdb
+C:\Users\Admin\Desktop\Weather\WeatherApplication\bin\Debug\net7.0\WeatherInfrastructure.dll
+C:\Users\Admin\Desktop\Weather\WeatherApplication\bin\Debug\net7.0\WeatherInfrastructure.pdb
+C:\Users\Admin\Desktop\Weather\WeatherApplication\obj\Debug\net7.0\WeatherApplication.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Weather\WeatherApplication\obj\Debug\net7.0\WeatherApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Weather\WeatherApplication\obj\Debug\net7.0\WeatherApplication.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Weather\WeatherApplication\obj\Debug\net7.0\WeatherApplication.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Weather\WeatherApplication\obj\Debug\net7.0\WeatherApplication.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Weather\WeatherApplication\obj\Debug\net7.0\WeatherApplication.csproj.CopyComplete
+C:\Users\Admin\Desktop\Weather\WeatherApplication\obj\Debug\net7.0\WeatherApplication.dll
+C:\Users\Admin\Desktop\Weather\WeatherApplication\obj\Debug\net7.0\refint\WeatherApplication.dll
+C:\Users\Admin\Desktop\Weather\WeatherApplication\obj\Debug\net7.0\WeatherApplication.pdb
+C:\Users\Admin\Desktop\Weather\WeatherApplication\obj\Debug\net7.0\ref\WeatherApplication.dll

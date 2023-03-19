@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\bin\Debug\net7.0\WeatherInfrastructure.deps.json
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\bin\Debug\net7.0\WeatherInfrastructure.runtimeconfig.json
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\bin\Debug\net7.0\WeatherInfrastructure.dll
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\bin\Debug\net7.0\WeatherInfrastructure.pdb
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\obj\Debug\net7.0\WeatherInfrastructure.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\obj\Debug\net7.0\WeatherInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\obj\Debug\net7.0\WeatherInfrastructure.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\obj\Debug\net7.0\WeatherInfrastructure.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\obj\Debug\net7.0\WeatherInfrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\obj\Debug\net7.0\WeatherInfrastructure.dll
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\obj\Debug\net7.0\refint\WeatherInfrastructure.dll
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\obj\Debug\net7.0\WeatherInfrastructure.pdb
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\obj\Debug\net7.0\WeatherInfrastructure.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Weather\WeatherInfrastructure\obj\Debug\net7.0\ref\WeatherInfrastructure.dll
