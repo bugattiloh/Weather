@@ -1,41 +1,27 @@
-﻿using System.Text.Json;
-using Application.DTO;
+﻿using Application.Clients;
 using MediatR;
 using WeatherInfrastructure;
 using WeatherInfrastructure.Repository;
 
 namespace Application.MediatR.SaveTemperatureByDate;
 
-public class SaveTemperatureByDateCommandHandler : IRequestHandler<SaveTemperatureByDateCommand>, IDisposable
+public class SaveTemperatureByDateCommandHandler : IRequestHandler<SaveTemperatureByDateCommand>
 {
     private readonly IMoscowWeatherRepository _repository;
-    private readonly HttpClient _httpClient;
+    private readonly WeatherHttpClient _weatherHttpClient;
 
-    public SaveTemperatureByDateCommandHandler(IMoscowWeatherRepository repository, IHttpClientFactory httpClientFactory)
+    public SaveTemperatureByDateCommandHandler(IMoscowWeatherRepository repository, WeatherHttpClient weatherHttpClient)
     {
         _repository = repository;
-        _httpClient = httpClientFactory.CreateClient("weather");
+        _weatherHttpClient = weatherHttpClient;
     }
 
     public async Task Handle(SaveTemperatureByDateCommand request, CancellationToken cancellationToken)
     {
-        var date = request.Date.ToString("yyyy-MM-dd");
-        var response =
-            await _httpClient.GetAsync(
-                $"forecast?latitude=55.75&longitude=37.62&hourly=temperature_2m&start_date={date}&end_date={date}",
-                cancellationToken);
+        var dto = await _weatherHttpClient.Forecast(request.Date, cancellationToken);
 
-
-        var responseString = await response.Content.ReadAsStringAsync(cancellationToken);
-        var dto = JsonSerializer.Deserialize<MoscowWeatherDto>(responseString);
-
-        var moscowWeather = new MoscowWeather(request.Date, (double)dto.hourly.temperature_2m.First(x => x.HasValue));
+        var moscowWeather = new MoscowWeather(request.Date, (double)dto.Hourly.Temperature2m.First(x => x.HasValue));
 
         await _repository.SaveTemperatureByDate(moscowWeather, cancellationToken);
-    }
-
-    public void Dispose()
-    {
-        _httpClient.Dispose();
     }
 }

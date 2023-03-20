@@ -1,7 +1,12 @@
-﻿namespace Application.DTO;
+﻿using System.Text.Json.Serialization;
+
+namespace Application.DTO;
 
 public class HourlyUnits
 {
-    public string time { get; set; }
-    public string temperature_2m { get; set; }
+    [JsonPropertyName("time")]
+    public string Time { get; set; }
+
+    [JsonPropertyName("temperature_2m")]
+    public string Temperature2m { get; set; }
 }

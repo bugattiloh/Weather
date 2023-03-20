@@ -1,14 +1,33 @@
-﻿namespace Application.DTO;
+﻿using System.Text.Json.Serialization;
+
+namespace Application.DTO;
 
 public class MoscowWeatherDto
 {
-    public double latitude { get; set; }
-    public double longitude { get; set; }
-    public double generationtime_ms { get; set; }
-    public int utc_offset_seconds { get; set; }
-    public string timezone { get; set; }
-    public string timezone_abbreviation { get; set; }
-    public double elevation { get; set; }
-    public HourlyUnits hourly_units { get; set; }
-    public Hourly hourly { get; set; }
+    [JsonPropertyName("latitude")]
+    public double Latitude { get; set; }
+
+    [JsonPropertyName("longitude")]
+    public double Longitude { get; set; }
+
+    [JsonPropertyName("generationtime_ms")]
+    public double GenerationtimeMs { get; set; }
+
+    [JsonPropertyName("utc_offset_seconds")]
+    public int UtcOffsetSeconds { get; set; }
+
+    [JsonPropertyName("timezone")]
+    public string Timezone { get; set; }
+
+    [JsonPropertyName("timezone_abbreviation")]
+    public string TimezoneAbbreviation { get; set; }
+
+    [JsonPropertyName("elevation")]
+    public double Elevation { get; set; }
+
+    [JsonPropertyName("hourly_units")]
+    public HourlyUnits HourlyUnits { get; set; }
+
+    [JsonPropertyName("hourly")]
+    public Hourly Hourly { get; set; }
 }

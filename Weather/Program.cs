@@ -1,5 +1,6 @@
 using System.Reflection;
 using System.Text;
+using Application.Clients;
 using Application.MediatR.CreateUser;
 using Application.MediatR.GetTemperatureByDate;
 using Application.Validator;
@@ -57,7 +58,7 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection(nameof(JwtConfig)));
 builder.Services.AddSingleton<AuthorizerService>();
 
-builder.Services.AddHttpClient("weather", x => { x.BaseAddress = new Uri("https://api.open-meteo.com/v1/"); });
+builder.Services.AddHttpClient<WeatherHttpClient>(x => { x.BaseAddress = new Uri("https://api.open-meteo.com/v1/"); });
 
 // Connect database
 builder.Services.AddDbContext<WeatherContext>(options => options.UseNpgsql(builder.Configuration["ConnectionString"]));
